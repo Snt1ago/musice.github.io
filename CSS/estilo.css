@@ -1,0 +1,352 @@
+:root {
+    --fuente: "/home/etslp/Escritorio/Diseño/webRobotoMono-VariableFont_wght.ttf";
+    --color: rgb(100,200,150);
+    --tamaño: 16px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.header {
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 10px 3px rgb(0, 0, 0);
+    z-index: 1;
+
+}
+
+@font-face {
+    font-family: dunkin;
+    src: url(Dunkin.otf);
+}
+
+.navigation ul {
+    left: 15rem;
+    position: relative;
+    top: 50%;
+    margin: 1rem;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+
+}
+
+.navigation ul li {
+    display: inline-block; 
+    top: 50%;
+}
+
+.navigation ul li a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    transition: all 0.4s linear;
+    border-radius: 1rem;
+    top: 10rem;
+    font-family: dunkin;
+
+}
+
+.navigation ul li a:hover {
+    background: rgb(15, 56, 151);
+
+}
+
+@media only screen and (max-width: 350px) {
+    
+    .navigation {
+        width: 100%;
+        top: 10rem;
+
+    }
+
+    .navigation ul {
+        display: inline-block;
+        top: 10rem;
+
+    }
+
+    .navigation ul.show {
+        display: inline-block;
+
+    }
+    .navigation ul li {
+        display: inline-block; 
+    }
+    
+    .navigation ul li a {
+        position: fixed;
+        display: inline-block;
+        padding: 0.5rem 0;
+        border-radius: 5px;
+        transition: all 0.4s linear;
+    }
+    
+    .navigation ul li a:hover {
+        background: rgb(10, 58, 151);
+    }
+
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 190px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    bottom: 10rem;
+    font-family: code;
+    color: black;
+    
+}
+
+@font-face {
+    font-family: code;
+    src: url(code.ttf);
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(100,200,150);
+}
+
+.header a:hover {
+    color: white;
+}
+
+.main {
+    padding: 20% 10% 10% 10%;
+}
+
+.container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.menu {
+    position: relative;
+    background: transparent;
+    border: inset 5px cyan;
+    border-radius: 70px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 10rem;
+    justify-content:center;
+    
+
+}
+
+.menu button {
+    background-color: white;
+    border: solid 2px red;
+    border-radius: 30px;
+    margin: 10px; 
+    text-decoration: none;
+    display: inline;
+    justify-content: space-around;
+    font-family: dunkin;
+    font-size: 20px;
+
+}
+
+h2 {
+    font-family: dunkin;
+}
+
+.menu button:hover {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: red;
+    color: white;
+}
+
+.menu button a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu button a:hover {
+    color: white;
+}
+
+
+.canciones {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 80px;
+}
+
+.canciones a audio {
+    position: relative;
+    margin: 20px;
+    padding: 5px;
+    top: 80%;
+    color: #25d366;
+    outline: none;
+    width: 40rem;
+    
+
+}
+
+.house {
+    background-color: white;
+    border-radius: 30px;
+    width: 50rem;
+    box-shadow: 4px 4px 10px 3px rgb(0, 0, 0);
+
+
+}
+
+.house img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    align-items: end;
+}
+
+.techno {
+    background-color: white;
+    box-shadow: 4px 4px 10px 3px rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 50rem;
+
+
+}
+
+.techno img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    align-items: end;
+}
+
+
+.ambient {
+    background-color: white;
+    box-shadow: 4px 4px 10px 3px rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 50rem;
+
+}
+
+.ambient img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    align-items: end;
+}
+
+.trance {
+    background-color: white;
+    box-shadow: 4px 4px 10px 3px rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 50rem;
+
+}
+
+.trance img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    align-items: end;
+}
+
+.dance {
+    background-color: white;
+    box-shadow: 4px 4px 10px 3px rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 50rem;
+
+}
+
+.dance img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    align-items: end;
+}
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 0.5rem rgb(0,0,0,.42);
+}
+
+.icon-facebook {
+    background: #3b5998;
+}
+
+.icon-instagram {
+    background: linear-gradient(red, orange, rgb(250,200,120));
+}
+.icon-twitter {
+    background: #00acee;
+}
+.icon-whatsapp {
+    background:  #25d366;
+}
+
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+    border-radius:0 0 0 1rem;
+}
+
+.footer {
+    background-color: #e4e4e4;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+
+
+
